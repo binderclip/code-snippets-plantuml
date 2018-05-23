@@ -1,0 +1,26 @@
+@startuml session-login
+start
+:登录;
+:创建新的 session;
+:删除超过数量的 session;
+stop
+@enduml
+
+@startuml session-logout
+start
+:删除当前 session;
+stop
+@enduml
+
+@startuml session-request
+start
+:获取 session id;
+:用 session id 获取用户;
+if (是否存在用户) then (存在)
+  :设置 g.me;
+  :执行其他操作;
+else (不存在)
+  :提示错误;
+endif
+stop
+@enduml
