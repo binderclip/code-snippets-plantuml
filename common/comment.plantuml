@@ -1,0 +1,17 @@
+@startuml class-diagram-sp
+' test comment
+/' multi
+lines
+comment '/
+' https://forum.plantuml.net/1353/is-it-possible-to-comment-out-lines-of-diagram-syntax
+
+class Dummy {
+    String data
+    void methods()
+}
+
+class Flight {
+    flightNumber: Integer
+    departureTime: Date
+}
+@enduml
